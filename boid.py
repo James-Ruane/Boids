@@ -1,7 +1,6 @@
 import random
 from py5 import Py5Vector
 
-
 class Boid():
     def __init__(self):
         from main import x_screen_size, y_screen_size
