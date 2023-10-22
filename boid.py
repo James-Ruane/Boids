@@ -46,7 +46,7 @@ class Boid():
             vision = self.vision
             total = 0
             for i in flock:
-                # i = i.userData
+                # i = i.userData - used for quadtree
                 distance = Py5Vector.dist(self.position, i.position)
                 if (self != i and distance < vision):
                     average_allign = Py5Vector(average_allign) + i.velocity
